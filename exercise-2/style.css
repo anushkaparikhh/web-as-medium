@@ -1,8 +1,135 @@
 
+@font-face {
+    font-family: 'Garamond';
+    src: url(fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Garamond-Italic';
+    src: url(fonts/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Denim';
+    src: url(fonts/DenimINK-TRIAL-Regular.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px dotted blue; */
+}
+
+body {
+    padding-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(154, 203, 154);
+}
+
 p {
     text-align:left;
     font-size: 20px;
     /*max-width: 700px;*/
     align-items: center;
+    width: 100%;
+    max-width: 520px;
+    line-height: 140%;
+    font-family: 'Garamond';
+    text-indent: 48px;
+    letter-spacing: 0.25pt;
+    color: rgba(0, 0, 0, 0.646);
+    position: flex;
 
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    float: none;
+
+}
+
+
+h1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Denim';
+    letter-spacing: 0.5pt;
+    font-size: 12pt;
+    top: 0px;
+    background-color: white;
+}
+
+h2 {
+    text-align:left;
+    font-size: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 520px;
+    line-height: 120%;
+    font-family: 'Garamond-Italic';
+    text-indent: 48px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 4;
+}
+
+.container {
+    justify-content: end;
+    display: flex;
+    width: 100vw;
+    justify-content: flex-end;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.container-arrow-right {
+    position: fixed;
+    right: 24px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.container-arrow-left {
+    position: fixed;
+    left: 60px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-sizing: border-box;
 }
