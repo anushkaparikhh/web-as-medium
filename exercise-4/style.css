@@ -1,0 +1,130 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container div {
+  width: 100px;
+  text-align: center;  
+  font-size: 30px;
+}
+
+
+#f-rectangle {
+  width: 150px;
+  height: 20px;
+  background: rgb(0, 0, 0);
+  margin-top: 30px;
+  padding: 20px;
+}
+
+#fv-rectangle {
+    width: 10px;
+    float: left;
+    align-items:left;
+    height: 20px;
+}
+
+#rectangle {
+  width: 50px;
+  height: 100px;
+  background: rgb(0, 0, 0);
+  float: left;
+}
+
+
+#triangle-topleft {
+    margin-top: 30px;
+      width: 0;
+      height: 0;
+      border-top: 20px solid rgb(0, 0, 0);
+      border-right: 50px solid transparent;
+      float: left;
+}
+
+#line-rectangle {
+    margin-top: 30px;
+    width: 20px;
+    height: 90px;
+    background: rgb(0, 0, 0);
+    float: left;
+    
+}
+
+#small-tag {
+    margin-top: 70px;
+    width: 50px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+}
+
+.arrow {
+  --t: 45%; /* control the tail part */
+  --h: 30%; /* control the head part */
+  
+  aspect-ratio: 2/3;
+  height: 200px;
+  background: #000000;
+  clip-path: polygon(calc(50% - var(--t)/5) 100%,calc(50% - var(--t)/5) var(--h),0 var(--h),50% 0,100% var(--h),calc(50% + var(--t)/8) var(--h),calc(50% + var(--t)/5) 100%);
+}
+
+
+#arrow-tag {
+    margin-top: -90px;
+    margin-left: 20px;
+    width: 100px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+}
+
+.thunder {
+    margin-top: 50px;
+    height: 200px; /* control the size */
+    aspect-ratio: 0.56;
+    clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 100%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);
+    background: #000000;
+}
+
+.arc {
+  --b: 20px; 
+  --a: 50deg; 
+
+  margin-top: 50px;
+  width: 250px;
+  aspect-ratio: 1;
+  padding: var(--b);
+  border-radius: 50%;
+  background: #000000;
+  --_g:/var(--b) var(--b) no-repeat
+    radial-gradient(50% 50%,#000 97%,#0000);
+  mask: top var(--_g),
+    calc(50% + 50%*sin(var(--a))) 
+    calc(50% - 50%*cos(var(--a))) var(--_g),
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 var(--a),#0000 0);
+}
+
+#rectangle-arc {
+    margin-top: -90px;
+    margin-left: 40px;
+    width: 20px;
+    height: 90px;
+    background: rgb(0, 0, 0);
+}
+
+#curve-tag {
+    margin-top: -50px;
+    width: 50px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+}
