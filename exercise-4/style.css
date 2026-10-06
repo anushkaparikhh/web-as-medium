@@ -94,8 +94,8 @@
     margin-top: 50px;
     height: 200px; /* control the size */
     aspect-ratio: 0.56;
-    clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 100%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);
-    background: #992626;
+    clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 20%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);
+    background: #302699;
 }
 
 .arc {
@@ -130,4 +130,29 @@
     width: 50px;
     height: 15px;
     background: rgb(0, 0, 0);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #333333;
+  border-radius: 50%;
+   margin-top: -90px;
+    margin-left: 20px;
+}
+
+#rectangle-blue {
+    margin-top:-90px;
+    margin-left: 28px;
+    width: 5px;
+    height: 90px;
+    background: #302699;
+}
+
+#thunder-tag {
+    margin-top: -60px;
+    margin-left: 30px;
+    width: 40px;
+    height: 8px;
+    background: #302699;
 }
