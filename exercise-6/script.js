@@ -7,7 +7,6 @@ const button = document.getElementById('button');
     button.textContent = result ? 'moveeeeeeeee' : 'click on me !';
 
     if (!result) {
-      // return to its original spot in the layout
       button.style.left = '';
       button.style.top = '';
       button.style.transform = '';
