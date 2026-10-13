@@ -4,7 +4,7 @@ const button = document.getElementById('button');
 
   button.addEventListener('click', () => {
     const result = classes.toggle('on');
-    button.textContent = result ? 'ON' : 'OFF';
+    button.textContent = result ? 'moveeeeeeeee' : 'click on me !';
 
     if (!result) {
       // return to its original spot in the layout
