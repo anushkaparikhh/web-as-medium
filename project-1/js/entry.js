@@ -1,5 +1,5 @@
 const entryPage = document.querySelector(".entry-page");
 
-setTimeout(() => {
+entryPage.addEventListener("click", () => {
   entryPage.classList.add("fade-out");
-}, 2000);
+});
